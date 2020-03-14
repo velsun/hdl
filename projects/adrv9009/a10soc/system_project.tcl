@@ -3,6 +3,9 @@ source ../../scripts/adi_env.tcl
 source ../../scripts/adi_project_intel.tcl
 
 adi_project adrv9009_a10soc
+#set projname "adrv9009_a10soc"
+
+source ../../scripts/adi_sysid_intel.tcl
 
 source $ad_hdl_dir/projects/common/a10soc/a10soc_system_assign.tcl
 source $ad_hdl_dir/projects/common/a10soc/a10soc_plddr4_assign.tcl

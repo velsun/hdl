@@ -15,23 +15,20 @@ ad_ip_files sysid_rom [list \
   "sysid_rom.v"]
 
 # IP parameters
-  
+
 add_parameter ROM_WIDTH INTEGER 32
 set_parameter_property ROM_WIDTH DEFAULT_VALUE 32
 set_parameter_property ROM_WIDTH DISPLAY_NAME "ROM width"
-set_parameter_property ROM_WIDTH TYPE INTEGER
 set_parameter_property ROM_WIDTH UNITS None
 set_parameter_property ROM_WIDTH HDL_PARAMETER true
 
 add_parameter ROM_ADDR_BITS INTEGER 6
 set_parameter_property ROM_ADDR_BITS DEFAULT_VALUE 6
 set_parameter_property ROM_ADDR_BITS DISPLAY_NAME "ROM address bits"
-set_parameter_property ROM_ADDR_BITS TYPE INTEGER
 set_parameter_property ROM_ADDR_BITS HDL_PARAMETER true
 
 add_parameter PATH_TO_FILE STRING "path_to_mem_init_file"
 set_parameter_property PATH_TO_FILE DISPLAY_NAME "ROM address bits"
-set_parameter_property PATH_TO_FILE TYPE STRING
 set_parameter_property PATH_TO_FILE HDL_PARAMETER true
 
 # external clock and control/status ports
