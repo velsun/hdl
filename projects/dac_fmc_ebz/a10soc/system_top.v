@@ -36,7 +36,9 @@
 `timescale 1ns/100ps
 
 module system_top #(
-    parameter JESD_L = 4
+    parameter JESD_L = 4,
+    parameter MODE = 4,
+    parameter DEVICE = "AD9172"
   ) (
 
   // clock and resets
@@ -167,7 +169,7 @@ module system_top #(
   // If you are planning to build a bitstream for just one of those boards you
   // can hardwire the logic level here.
   //
-  assign spi_en = (DEVICE_CODE <= 2);
+  assign spi_en = (DEVICE <= 2);
 
   assign spi_csn_clk = spi_csn_s[0];
   assign spi_csn_dac = spi_csn_s[1];
